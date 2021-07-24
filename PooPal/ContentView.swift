@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  PooPal
-//
-//  Created by Tom  on 7/24/21.
-//
-
 import SwiftUI
 import CoreData
 
@@ -12,14 +5,14 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Poo.createdAt, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var poos: FetchedResults<Poo>
 
     var body: some View {
         List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+            ForEach(poos) { poo in
+                Text("Item at \(poo.createdAt!, formatter: itemFormatter)")
             }
             .onDelete(perform: deleteItems)
         }
@@ -36,8 +29,8 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newPoo = Poo(context: viewContext)
+            newPoo.createdAt = Date()
 
             do {
                 try viewContext.save()
@@ -52,7 +45,7 @@ struct ContentView: View {
 
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+            offsets.map { poos[$0] }.forEach(viewContext.delete)
 
             do {
                 try viewContext.save()
@@ -73,8 +66,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//    }
+//}

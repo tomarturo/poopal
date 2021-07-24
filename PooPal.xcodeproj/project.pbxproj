@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20F3B1426ACBD3000F84402 /* PooPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1326ACA6320037BAB8 /* PooPal.xcdatamodeld */; };
 		E2B8AA0926ACA6310037BAB8 /* PooPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA0826ACA6310037BAB8 /* PooPalApp.swift */; };
 		E2B8AA0B26ACA6310037BAB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA0A26ACA6310037BAB8 /* ContentView.swift */; };
 		E2B8AA0D26ACA6320037BAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B8AA0C26ACA6320037BAB8 /* Assets.xcassets */; };
 		E2B8AA1026ACA6320037BAB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B8AA0F26ACA6320037BAB8 /* Preview Assets.xcassets */; };
 		E2B8AA1226ACA6320037BAB8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1126ACA6320037BAB8 /* Persistence.swift */; };
-		E2B8AA1526ACA6320037BAB8 /* PooPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1326ACA6320037BAB8 /* PooPal.xcdatamodeld */; };
 		E2B8AA2026ACA6320037BAB8 /* PooPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1F26ACA6320037BAB8 /* PooPalTests.swift */; };
 		E2B8AA2B26ACA6320037BAB8 /* PooPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA2A26ACA6320037BAB8 /* PooPalUITests.swift */; };
 /* End PBXBuildFile section */
@@ -267,7 +267,7 @@
 			files = (
 				E2B8AA1226ACA6320037BAB8 /* Persistence.swift in Sources */,
 				E2B8AA0B26ACA6310037BAB8 /* ContentView.swift in Sources */,
-				E2B8AA1526ACA6320037BAB8 /* PooPal.xcdatamodeld in Sources */,
+				E20F3B1426ACBD3000F84402 /* PooPal.xcdatamodeld in Sources */,
 				E2B8AA0926ACA6310037BAB8 /* PooPalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
