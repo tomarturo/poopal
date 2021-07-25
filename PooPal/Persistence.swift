@@ -16,7 +16,10 @@ struct PersistenceController {
         for _ in 0..<10 {
             let newPoo = Poo(context: viewContext)
             newPoo.createdAt = Date()
-//            newPoo.coords = Coordinate(context: viewContext)
+            let location = Location(context: viewContext);
+            location.latitude = 123.1234
+            location.longitude = 456.5667
+            newPoo.location = location;
         }
         do {
             try viewContext.save()

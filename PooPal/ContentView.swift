@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(poos) { poo in
-                    Text("Poo at \(poo.createdAt!, formatter: itemFormatter)")
+                    Text("Poo at \(poo.createdAt!, formatter: itemFormatter) Longitude: \(poo.location!.longitude) Latitude: \(poo.location!.latitude)")
                 }
                 .onDelete(perform: deleteItems)
             }
@@ -35,6 +35,10 @@ struct ContentView: View {
         withAnimation {
             let newPoo = Poo(context: viewContext)
             newPoo.createdAt = Date()
+            let location = Location(context: viewContext);
+            location.latitude = 123.1234
+            location.longitude = 456.5667
+            newPoo.location = location;
 
             do {
                 try viewContext.save()
