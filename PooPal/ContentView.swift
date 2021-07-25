@@ -10,19 +10,23 @@ struct ContentView: View {
     private var poos: FetchedResults<Poo>
 
     var body: some View {
-        List {
-            ForEach(poos) { poo in
-                Text("Item at \(poo.createdAt!, formatter: itemFormatter)")
+        NavigationView {
+            List {
+                ForEach(poos) { poo in
+                    Text("Poo at \(poo.createdAt!, formatter: itemFormatter)")
+                }
+                .onDelete(perform: deleteItems)
             }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
+            .toolbar {
+                HStack {
+                    #if os(iOS)
+                    EditButton()
+                    #endif
 
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
+                    Button(action: addItem) {
+                        Label("Add Item", systemImage: "plus")
+                    }
+                }
             }
         }
     }
@@ -66,8 +70,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
+}
