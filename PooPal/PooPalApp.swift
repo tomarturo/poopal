@@ -1,11 +1,5 @@
-//
-//  PooPalApp.swift
-//  PooPal
-//
-//  Created by Tom  on 7/24/21.
-//
-
 import SwiftUI
+import CoreLocation
 
 @main
 struct PooPalApp: App {

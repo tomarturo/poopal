@@ -8,6 +8,8 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Poo.createdAt, ascending: true)],
         animation: .default)
     private var poos: FetchedResults<Poo>
+    
+    @StateObject var locationManager = LocationManager()
 
     var body: some View {
         NavigationView {
@@ -35,10 +37,14 @@ struct ContentView: View {
         withAnimation {
             let newPoo = Poo(context: viewContext)
             newPoo.createdAt = Date()
-            let location = Location(context: viewContext);
-            location.latitude = 123.1234
-            location.longitude = 456.5667
-            newPoo.location = location;
+            let pooLocation = Location(context: viewContext);
+            
+            let location = locationManager.location;
+
+            pooLocation.latitude = location?.latitude ?? 0
+            pooLocation.longitude = location?.longitude ?? 0
+
+            newPoo.location = pooLocation;
 
             do {
                 try viewContext.save()
