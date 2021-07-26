@@ -3,7 +3,8 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    @State private var showingSheet = false
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Poo.createdAt, ascending: true)],
         animation: .default)
@@ -13,24 +14,20 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(poos) { poo in
-                    Text("Poo at \(poo.createdAt!, formatter: itemFormatter) Longitude: \(poo.location!.longitude) Latitude: \(poo.location!.latitude)")
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                HStack {
-                    #if os(iOS)
-                    EditButton()
-                    #endif
-
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+            VStack {
+                List {
+                    ForEach(poos) { poo in
+                        Text("Poo at \(poo.createdAt!, formatter: itemFormatter) Longitude: \(poo.location!.longitude) Latitude: \(poo.location!.latitude)")
                     }
+                    .onDelete(perform: deleteItems)
                 }
+                Button(action: addItem) {
+                    Label("Create a Reminder", systemImage: "plus")
+                }
+                .padding()
             }
         }
+        .navigationTitle("My Poop Reminders")
     }
 
     private func addItem() {
@@ -71,7 +68,7 @@ struct ContentView: View {
             }
         }
     }
-}
+
 
 private let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
@@ -84,4 +81,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
+}
 }

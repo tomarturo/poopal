@@ -15,6 +15,7 @@
 		E2B8AA1226ACA6320037BAB8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1126ACA6320037BAB8 /* Persistence.swift */; };
 		E2B8AA2026ACA6320037BAB8 /* PooPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1F26ACA6320037BAB8 /* PooPalTests.swift */; };
 		E2B8AA2B26ACA6320037BAB8 /* PooPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA2A26ACA6320037BAB8 /* PooPalUITests.swift */; };
+		E2C2A4CA26AD29B100FFA43B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C2A4C926AD29B100FFA43B /* MapView.swift */; };
 		ED9B5A4026ACED26000B1BB2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9B5A3F26ACED26000B1BB2 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		E2B8AA2626ACA6320037BAB8 /* PooPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PooPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8AA2A26ACA6320037BAB8 /* PooPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PooPalUITests.swift; sourceTree = "<group>"; };
 		E2B8AA2C26ACA6320037BAB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C2A4C926AD29B100FFA43B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		ED9B5A3F26ACED26000B1BB2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				E2B8AA1626ACA6320037BAB8 /* Info.plist */,
 				E2B8AA1326ACA6320037BAB8 /* PooPal.xcdatamodeld */,
 				E2B8AA0E26ACA6320037BAB8 /* Preview Content */,
+				E2C2A4C926AD29B100FFA43B /* MapView.swift */,
 			);
 			path = PooPal;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B8AA1226ACA6320037BAB8 /* Persistence.swift in Sources */,
+				E2C2A4CA26AD29B100FFA43B /* MapView.swift in Sources */,
 				E2B8AA0B26ACA6310037BAB8 /* ContentView.swift in Sources */,
 				ED9B5A4026ACED26000B1BB2 /* LocationManager.swift in Sources */,
 				E20F3B1426ACBD3000F84402 /* PooPal.xcdatamodeld in Sources */,
