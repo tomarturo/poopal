@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E20F3B1426ACBD3000F84402 /* PooPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1326ACA6320037BAB8 /* PooPal.xcdatamodeld */; };
+		E21A25BC26B0F21A00E703B2 /* CreateReminderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A25BB26B0F21A00E703B2 /* CreateReminderButton.swift */; };
 		E2B8AA0926ACA6310037BAB8 /* PooPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA0826ACA6310037BAB8 /* PooPalApp.swift */; };
 		E2B8AA0B26ACA6310037BAB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA0A26ACA6310037BAB8 /* ContentView.swift */; };
 		E2B8AA0D26ACA6320037BAB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B8AA0C26ACA6320037BAB8 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E21A25BB26B0F21A00E703B2 /* CreateReminderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderButton.swift; sourceTree = "<group>"; };
 		E2B8AA0526ACA6310037BAB8 /* PooPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PooPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8AA0826ACA6310037BAB8 /* PooPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PooPalApp.swift; sourceTree = "<group>"; };
 		E2B8AA0A26ACA6310037BAB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				E2B8AA0826ACA6310037BAB8 /* PooPalApp.swift */,
+				E21A25BB26B0F21A00E703B2 /* CreateReminderButton.swift */,
 				E2B8AA0A26ACA6310037BAB8 /* ContentView.swift */,
 				ED9B5A3F26ACED26000B1BB2 /* LocationManager.swift */,
 				E2B8AA0C26ACA6320037BAB8 /* Assets.xcassets */,
@@ -277,6 +280,7 @@
 				ED9B5A4026ACED26000B1BB2 /* LocationManager.swift in Sources */,
 				E20F3B1426ACBD3000F84402 /* PooPal.xcdatamodeld in Sources */,
 				E2B8AA0926ACA6310037BAB8 /* PooPalApp.swift in Sources */,
+				E21A25BC26B0F21A00E703B2 /* CreateReminderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

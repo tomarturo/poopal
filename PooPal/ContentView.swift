@@ -21,13 +21,14 @@ struct ContentView: View {
                     }
                     .onDelete(perform: deleteItems)
                 }
+                
                 Button(action: addItem) {
                     Label("Create a Reminder", systemImage: "plus")
                 }
                 .padding()
             }
+            .navigationTitle("PooPal Reminders")
         }
-        .navigationTitle("My Poop Reminders")
     }
 
     private func addItem() {
