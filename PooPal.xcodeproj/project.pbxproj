@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56C809892B2FCF0B00AC1E5A /* RemindersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C809882B2FCF0B00AC1E5A /* RemindersList.swift */; };
+		56C8098B2B2FD06800AC1E5A /* ReminderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C8098A2B2FD06800AC1E5A /* ReminderDetail.swift */; };
 		E20F3B1426ACBD3000F84402 /* PooPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA1326ACA6320037BAB8 /* PooPal.xcdatamodeld */; };
 		E21A25BC26B0F21A00E703B2 /* CreateReminderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A25BB26B0F21A00E703B2 /* CreateReminderButton.swift */; };
 		E2B8AA0926ACA6310037BAB8 /* PooPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8AA0826ACA6310037BAB8 /* PooPalApp.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56C809882B2FCF0B00AC1E5A /* RemindersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersList.swift; sourceTree = "<group>"; };
+		56C8098A2B2FD06800AC1E5A /* ReminderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetail.swift; sourceTree = "<group>"; };
 		E21A25BB26B0F21A00E703B2 /* CreateReminderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderButton.swift; sourceTree = "<group>"; };
 		E2B8AA0526ACA6310037BAB8 /* PooPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PooPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B8AA0826ACA6310037BAB8 /* PooPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PooPalApp.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				E2B8AA1326ACA6320037BAB8 /* PooPal.xcdatamodeld */,
 				E2B8AA0E26ACA6320037BAB8 /* Preview Content */,
 				E2C2A4C926AD29B100FFA43B /* MapView.swift */,
+				56C809882B2FCF0B00AC1E5A /* RemindersList.swift */,
+				56C8098A2B2FD06800AC1E5A /* ReminderDetail.swift */,
 			);
 			path = PooPal;
 			sourceTree = "<group>";
@@ -277,8 +283,10 @@
 				E2B8AA1226ACA6320037BAB8 /* Persistence.swift in Sources */,
 				E2C2A4CA26AD29B100FFA43B /* MapView.swift in Sources */,
 				E2B8AA0B26ACA6310037BAB8 /* ContentView.swift in Sources */,
+				56C809892B2FCF0B00AC1E5A /* RemindersList.swift in Sources */,
 				ED9B5A4026ACED26000B1BB2 /* LocationManager.swift in Sources */,
 				E20F3B1426ACBD3000F84402 /* PooPal.xcdatamodeld in Sources */,
+				56C8098B2B2FD06800AC1E5A /* ReminderDetail.swift in Sources */,
 				E2B8AA0926ACA6310037BAB8 /* PooPalApp.swift in Sources */,
 				E21A25BC26B0F21A00E703B2 /* CreateReminderButton.swift in Sources */,
 			);
